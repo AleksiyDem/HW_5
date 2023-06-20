@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!--<link href="minimal-table.css" rel="stylesheet" type="text/css">-->
+	<title>Document</title>
+</head>
+
+<body>
+
+
+	<h1> Задача 5</h1>
+
+	<p>
+	<h3>
+		Задача 5. Вивести таблицю
+
+
+
+	</h3>
+	</p>
+
+
+
+	<script>
+		// --------------------------1. Вводимо необхідні дані------------------------------------------
+
+
+
+		let cell = 1
+		// ------------------------- 2 Обчислення результату--------------------------------------------
+
+
+		document.write('<table border = "2px">')
+
+		for (let row = 1; row <= 3; row++) {
+			document.write(` <tr>  `)
+
+			for (let i = 1; i <= 3; i++) {
+				document.write(` <td> ${cell++} </td> `)
+			}
+		}
+		document.write('</table>')
+
+
+	</script>
+
+
+</body>
+
+</html>

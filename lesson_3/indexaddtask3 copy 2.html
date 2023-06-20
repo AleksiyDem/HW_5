@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+
+<body>
+
+
+	<h1> Задача 3</h1>
+
+	<p>
+	<h3>
+		Задача 3. Комп’ютер загадує число від 1 до 10. Двоє користувачів надають свої відповіді. Виграє той, у кого число
+		знаходиться ближче до загаданого комп’ютером числа.
+
+
+	</h3>
+	</p>
+	<script>
+		//-----------------  1  Вводимо необхідні дані   ----------------------------------
+
+		let min = 1, max = 10;
+		let numChoiseComp = min + Math.floor(Math.random() * (max - min + 1));
+		console.log(numChoiseComp);
+		let numChoiseUser1 = parseInt(prompt('Enter the number from diapazon 1 to 10', ''))
+		let numChoiseUser2 = parseInt(prompt('Enter the number from diapazon 1 to 10', ''))
+		var result
+
+		// ------------------  2 Обчислення результату та Виведення результату   ------------------------------------
+		if ((numChoiseUser1 - numChoiseUser2) % numChoiseComp < (numChoiseUser2 - numChoiseUser1) % numChoiseComp)
+			result = 'Другий користувач - перемога!!! Вітаю'
+		else
+			result = 'Перший користувач - перемога!!! Вітаю'
+		if (numChoiseUser1 === numChoiseUser2)
+			result = 'вітаю у вас нічья! '
+
+
+		document.write(`${result}`);
+
+
+
+
+
+
+	</script>
+
+
+</body>
+
+</html>

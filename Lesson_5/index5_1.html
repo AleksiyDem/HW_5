@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+
+<body>
+
+
+	<h1> Задача -2</h1>
+
+	<p>
+	<h3>
+		Задача -2. Поступово генерувати 100 випадкових чисел від 1 до 1000. Підрахувати яких чисел
+		більше: парних чи непарних.
+	</h3>
+	</p>
+
+	<script>
+		// --------------------------1. Вводимо необхідні дані------------------------------------------
+
+		let doubleNum = 0;
+		let unpairedNum = 0;
+
+		// ------------------------- 2 Обчислення результату-------------------------------------------- 
+
+		for (let num = 1; num <= 1000; num++) {
+			let userNum = 1 + Math.floor(Math.random() * 1000)
+			if (userNum === num)
+				doubleNum++
+			else
+				unpairedNum++
+		}
+		if (doubleNum < unpairedNum)
+			document.write(`The biggest quantity of unpaired numbers: ${unpairedNum}`)
+		else
+			document.write(`The biggest quantity of double numbers: ${doubleNum}`)
+
+
+
+
+	</script>
+
+
+</body>
+
+</html>

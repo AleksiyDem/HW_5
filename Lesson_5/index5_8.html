@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!--<link href="minimal-table.css" rel="stylesheet" type="text/css">-->
+	<title>Document</title>
+</head>
+
+<body>
+
+
+	<h1> Задача 7</h1>
+
+	<p>
+	<h3>
+		Задача 7. Вивести на екран N абзаців (N вводиться користувачем) за зразком:
+	</h3>
+	</p>
+
+
+
+	<script>
+		// --------------------------1. Вводимо необхідні дані------------------------------------------
+
+
+
+
+		// ------------------------- 2 Обчислення результату--------------------------------------------
+
+		let userNum = parseInt(prompt('Enter the number of paragraph "1-4"'))
+		for (let par = 1; par <= 1; par++) {
+
+			document.write(`<h1> Заголовок ${userNum} </h1>`)
+			for (let str = 1; str <= userNum; str++) {
+				document.write(`<p> Розділ ${userNum}, параграф ${str} </p> <br>`)
+			}
+
+		}
+	</script>
+
+
+</body>
+
+</html>
